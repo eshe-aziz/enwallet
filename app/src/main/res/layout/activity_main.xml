@@ -8,15 +8,158 @@
     tools:context=".MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvWallet"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/rvEnWallet"
+        android:layout_width="404dp"
+        android:layout_height="531dp"
+        android:layout_marginTop="116dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBalance" />
+
+    <ImageView
+        android:id="@+id/tvBag"
+        android:layout_width="50dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="38dp"
+        app:layout_constraintBottom_toTopOf="@+id/ivBalance"
+        app:layout_constraintEnd_toStartOf="@+id/tvKes1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:listitem="@layout/enwallet_list_item" />
+        app:srcCompat="@drawable/income" />
 
+    <TextView
+        android:id="@+id/tvMoneyIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:text="MONEY IN"
+        app:layout_constraintStart_toEndOf="@+id/tvBag"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvKes1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="KES 42400"
+        app:layout_constraintEnd_toStartOf="@+id/ivExpense"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toEndOf="@+id/tvBag"
+        app:layout_constraintTop_toBottomOf="@+id/tvMoneyIn" />
+
+    <ImageView
+        android:id="@+id/ivExpense"
+        android:layout_width="48dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/ivTransaction"
+        app:layout_constraintStart_toEndOf="@+id/tvKes1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/expense" />
+
+    <TextView
+        android:id="@+id/tvMoneyOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="MONEY OUT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ivExpense"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvKes2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="KES 23700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ivExpense"
+        app:layout_constraintTop_toBottomOf="@+id/tvMoneyOut" />
+
+    <ImageView
+        android:id="@+id/ivBalance"
+        android:layout_width="55dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/rvEnWallet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBag"
+        app:srcCompat="@drawable/balance" />
+
+    <TextView
+        android:id="@+id/tvBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="16dp"
+        android:text="BALANCE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toEndOf="@+id/tvBag"
+        app:layout_constraintTop_toBottomOf="@+id/tvKes1" />
+
+    <TextView
+        android:id="@+id/tvKes3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:text="KES 18700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.017"
+        app:layout_constraintStart_toEndOf="@+id/ivBalance"
+        app:layout_constraintTop_toBottomOf="@+id/tvBalance" />
+
+    <ImageView
+        android:id="@+id/ivTransaction"
+        android:layout_width="54dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="109dp"
+        app:layout_constraintBottom_toTopOf="@+id/rvEnWallet"
+        app:layout_constraintEnd_toStartOf="@+id/tvNum"
+        app:layout_constraintTop_toBottomOf="@+id/ivExpense"
+        app:srcCompat="@drawable/transactions" />
+
+    <TextView
+        android:id="@+id/tvTransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="8dp"
+        android:text="TRANSACTIONS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvKes2" />
+
+    <TextView
+        android:id="@+id/tvNum"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="118dp"
+        android:text="8"
+        app:layout_constraintBottom_toTopOf="@+id/rvEnWallet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTransaction" />
 </androidx.constraintlayout.widget.ConstraintLayout>

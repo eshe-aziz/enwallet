@@ -7,326 +7,339 @@
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="413dp"
-        android:layout_height="741dp">
-
-        <ImageView
-            android:id="@+id/ivMoney"
-            android:layout_width="51dp"
-            android:layout_height="52dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/income" />
-
-        <TextView
-            android:id="@+id/tvMoneyIn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:text="MONEY IN"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/ivMoney"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/tvKes1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="KES 42400"
-            tools:layout_editor_absoluteX="82dp"
-            tools:layout_editor_absoluteY="45dp" />
-
-        <ImageView
-            android:id="@+id/ivMoneyOut"
-            android:layout_width="49dp"
-            android:layout_height="52dp"
-            android:layout_marginStart="69dp"
-            android:layout_marginTop="13dp"
-            app:layout_constraintStart_toEndOf="@+id/tvKes1"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/expense" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:text="MONEY OUT"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/ivMoneyOut"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/tvKes2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="KES 23 700"
-            tools:layout_editor_absoluteX="285dp"
-            tools:layout_editor_absoluteY="46dp" />
-
-        <ImageView
-            android:id="@+id/ivBalance"
-            android:layout_width="51dp"
-            android:layout_height="51dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="16dp"
-            app:layout_constraintEnd_toStartOf="@+id/tvBalance"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ivMoney"
-            app:srcCompat="@drawable/balance" />
-
-        <TextView
-            android:id="@+id/tvBalance"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:text="BALANCE"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/ivMoney"
-            app:layout_constraintTop_toTopOf="@+id/ivBalance" />
-
-        <TextView
-            android:id="@+id/tvKes3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="KES 18 700"
-            tools:layout_editor_absoluteX="82dp"
-            tools:layout_editor_absoluteY="135dp" />
-
-        <ImageView
-            android:id="@+id/ivTransactions"
-            android:layout_width="44dp"
-            android:layout_height="46dp"
-            android:layout_marginStart="68dp"
-            android:layout_marginTop="36dp"
-            app:layout_constraintStart_toEndOf="@+id/tvKes3"
-            app:layout_constraintTop_toBottomOf="@+id/ivMoneyOut"
-            app:srcCompat="@drawable/transactions" />
-
-        <TextView
-            android:id="@+id/tvTransactions"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:text="TRANSACTIONS"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/ivTransactions" />
-
-        <TextView
-            android:id="@+id/tvTransBalance"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="8"
-            tools:layout_editor_absoluteX="294dp"
-            tools:layout_editor_absoluteY="135dp" />
-
-        <ImageView
-            android:id="@+id/imageView13"
-            android:layout_width="24dp"
-            android:layout_height="29dp"
-            app:srcCompat="@drawable/income_trx"
-            tools:layout_editor_absoluteX="24dp"
-            tools:layout_editor_absoluteY="222dp" />
-
-        <TextView
-            android:id="@+id/tvSalary"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="68dp"
-            android:layout_marginEnd="16dp"
-            android:text="Salary"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.01"
-            app:layout_constraintStart_toEndOf="@+id/imageView13"
-            app:layout_constraintTop_toBottomOf="@+id/tvKes3" />
-
-        <TextView
-            android:id="@+id/tvKes4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="KES 40000"
-            tools:layout_editor_absoluteX="66dp"
-            tools:layout_editor_absoluteY="254dp" />
-
-        <TextView
-            android:id="@+id/tvDate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="128dp"
-            android:layout_marginEnd="16dp"
-            android:text="1 July 2024"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvTransactions" />
-
-        <FrameLayout
-            android:id="@+id/frameLayout"
-            android:layout_width="403dp"
-            android:layout_height="84dp"
-            tools:layout_editor_absoluteX="6dp"
-            tools:layout_editor_absoluteY="204dp">
-
-        </FrameLayout>
-
-        <ImageView
-            android:id="@+id/imageView14"
-            android:layout_width="25dp"
-            android:layout_height="26dp"
-            app:srcCompat="@drawable/expense_trx"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="316dp" />
-
-        <TextView
-            android:id="@+id/tvRent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Rent"
-            tools:layout_editor_absoluteX="64dp"
-            tools:layout_editor_absoluteY="310dp" />
-
-        <TextView
-            android:id="@+id/tvKes5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="KES 14000"
-            tools:layout_editor_absoluteX="61dp"
-            tools:layout_editor_absoluteY="347dp" />
-
-        <TextView
-            android:id="@+id/tvDate2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="56dp"
-            android:layout_marginEnd="16dp"
-            android:text="2 July 2024"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+        android:layout_width="403dp"
+        android:layout_height="match_parent">
 
         <FrameLayout
             android:id="@+id/frameLayout2"
-            android:layout_width="405dp"
-            android:layout_height="68dp"
-            tools:layout_editor_absoluteX="6dp"
-            tools:layout_editor_absoluteY="309dp">
-
-        </FrameLayout>
-
-        <ImageView
-            android:id="@+id/imageView15"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            app:srcCompat="@drawable/income_trx"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="402dp" />
-
-        <TextView
-            android:id="@+id/tvDividends"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="16dp"
-            android:text="Dividends"
+            android:layout_width="380dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="20dp"
+            android:background="#D5CDCD"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/imageView15"
-            app:layout_constraintTop_toBottomOf="@+id/frameLayout2" />
-
-        <TextView
-            android:id="@+id/tvKes6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:text="KES 2400"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.128"
+            app:layout_constraintHorizontal_bias="0.413"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvDividends" />
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout4">
 
-        <TextView
-            android:id="@+id/tvDate3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="60dp"
-            android:layout_marginEnd="16dp"
-            android:text="4 July 2024"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/tvDividends"
-            app:layout_constraintTop_toBottomOf="@+id/frameLayout2" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="35dp"
+                android:layout_height="33dp"
+                app:srcCompat="@drawable/expense_trx" />
 
-        <FrameLayout
-            android:id="@+id/frameLayout3"
-            android:layout_width="407dp"
-            android:layout_height="70dp"
-            tools:layout_editor_absoluteX="6dp"
-            tools:layout_editor_absoluteY="398dp">
+            <TextView
+                android:id="@+id/tvRent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:text="Rent" />
 
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="40dp"
+                android:text="KES 16000" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="40dp"
+                android:text="2 July 2024" />
         </FrameLayout>
 
-        <ImageView
-            android:id="@+id/imageView16"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            app:srcCompat="@drawable/expense_trx"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="494dp" />
-
-        <TextView
-            android:id="@+id/tvElectricity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="16dp"
-            android:text="Electricity"
+        <FrameLayout
+            android:id="@+id/frameLayout5"
+            android:layout_width="387dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="20dp"
+            android:background="#D5CDCD"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.014"
-            app:layout_constraintStart_toEndOf="@+id/imageView16"
-            app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
+            app:layout_constraintHorizontal_bias="0.48"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout2">
 
-        <TextView
-            android:id="@+id/tvKes7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="KES 800"
-            tools:layout_editor_absoluteX="61dp"
-            tools:layout_editor_absoluteY="533dp" />
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="33dp"
+                android:layout_height="34dp"
+                app:srcCompat="@drawable/income_trx" />
 
-        <TextView
-            android:id="@+id/tvDate4"
-            android:layout_width="53dp"
-            android:layout_height="16dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="64dp"
-            android:layout_marginEnd="16dp"
-            android:text="5 July 2024"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/tvElectricity"
-            app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
+            <TextView
+                android:id="@+id/tvDividends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:text="Dividends" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="40dp"
+                android:text="KES 2400" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="40dp"
+                android:text="4 July 2024" />
+        </FrameLayout>
 
         <FrameLayout
-            android:layout_width="402dp"
-            android:layout_height="82dp"
-            tools:layout_editor_absoluteX="9dp"
-            tools:layout_editor_absoluteY="483dp">
+            android:id="@+id/frameLayout4"
+            android:layout_width="374dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="16dp"
+            android:background="#D5CDCD"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.375"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:srcCompat="@drawable/income_trx" />
+
+            <TextView
+                android:id="@+id/tvExpense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:text="Salary" />
+
+            <TextView
+                android:id="@+id/tvIncome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="40dp"
+                android:text="KES 40000" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="40dp"
+                android:text="1 July 2024" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout6"
+            android:layout_width="385dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:background="#D5CDCD"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout5">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="32dp"
+                android:layout_height="36dp"
+                app:srcCompat="@drawable/expense_trx" />
+
+            <TextView
+                android:id="@+id/tvElectricity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:text="Electricity" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="40dp"
+                android:text="KES 800" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="40dp"
+                android:text="5 July 2024" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout7"
+            android:layout_width="385dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="20dp"
+            android:background="#D5CDCD"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout6">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:srcCompat="@drawable/expense_trx" />
+
+            <TextView
+                android:id="@+id/tvInternet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:text="Internet" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="40dp"
+                android:text="KES 2500" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="40dp"
+                android:text="5 July 2024" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout8"
+            android:layout_width="386dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="20dp"
+            android:background="#D5CDCD"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout7">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                app:srcCompat="@drawable/expense_trx" />
+
+            <TextView
+                android:id="@+id/tvShopping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:text="Shopping" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="40dp"
+                android:text="KES 3500" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="40dp"
+                android:text="5 July 2024" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout9"
+            android:layout_width="386dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="16dp"
+            android:background="#D5CDCD"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout8">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="31dp"
+                android:layout_height="35dp"
+                app:srcCompat="@drawable/expense_trx" />
+
+            <TextView
+                android:id="@+id/tvBusFare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:text="Bus Fare" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="40dp"
+                android:text="KES 500" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="40dp"
+                android:text="11 July 2024" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="388dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="16dp"
+            android:background="#D5CDCD"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout9">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="34dp"
+                android:layout_height="32dp"
+                app:srcCompat="@drawable/expense_trx" />
+
+            <TextView
+                android:id="@+id/tvWaterBill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:text="Water Bill" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="40dp"
+                android:text="KES 5000" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="40dp"
+                android:text="12 July 2024" />
         </FrameLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
